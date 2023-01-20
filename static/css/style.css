@@ -39,14 +39,14 @@ body{
 .box{
     width: 150px;
     height: 150px;
-    border-right: 2px solid #000;
-    border-bottom: 2px solid #000;
+    border-right: 3px solid #000;
+    border-bottom: 3px solid #000;
     border-radius: 5px;
 }
 
-.box:hover{
+/*.box:hover{
     background-color: rgba(92, 178, 57, 0.3);
-}
+}*/
 
 
 .b-b-n
@@ -110,3 +110,115 @@ button:hover{
 .f-f-Comics{
     font-family: 'Comic Neue', cursive;
 }
+
+#changeBtn{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+@media only screen and (max-width: 412px)
+{
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        background-image: url("../img/rick.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #fff
+    }
+
+    .flex{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .f-d-c{
+        flex-direction: column;
+    }
+
+    #gameBoard{
+    width: 240px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    cursor: pointer;
+}
+
+    .box{
+        width: 80px;
+        height: 80px;
+        border-right: 3px solid #fff;
+        border-bottom: 3px solid #fff;
+        border-radius: 5px;
+    }
+
+    .b-b-n
+    {
+        border-bottom: none;
+    }
+
+    .b-r-n{
+        border-right: none;
+    }
+
+    .bg-c-f{
+    color: #f2c14e;
+    }
+    .f-s-120px{
+        font-size: 60px;
+    }
+    .f-s-48px{
+        font-size: 24px;
+    }
+
+    .f-f-Permanent-Marker{
+        font-family: 'Permanent Marker', cursive;
+    }
+
+    .l-s-3px{
+        letter-spacing: 3px;
+    }
+
+    .f-s-24px{
+        font-size: 32px;
+    }
+
+    .m-t-60px{
+        margin-top: 60px;
+    }
+
+    .m-b-20px{
+        margin-bottom: 0px;
+    }
+
+    button{
+        padding: 10px 20px;
+        border-radius: 10px;
+        background-color: #fff;
+        cursor: pointer;
+    }
+    
+    a{
+        text-decoration: none;
+        color: #2d414b;
+    }
+    
+    .font-button{
+        font-size: 18px;
+    }
+    
+    button:hover{
+        box-shadow: 1px 1px 15px 5px #fff;   
+    }
+    
+    .f-f-Comics{
+        font-family: 'Comic Neue', cursive;
+    }
+}
+    
