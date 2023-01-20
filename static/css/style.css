@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: #f2c14e;
+    background-color: #2d414b;
+}
+/*setting class secondarie aggiuntive*/
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.f-d-c{
+    flex-direction: column;
+}
+
+/*css tic tac toe*/
+#gameBoard{
+    width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px auto;
+}
+
+.box{
+    width: 150px;
+    height: 150px;
+    border-right: 2px solid #f2c14e;
+    border-bottom: 2px solid #f2c14e;
+}
+
+.box:hover{
+    background-color: rgba(92, 178, 57, 0.3);
+}
+
+.b-b-n
+{
+    border-bottom: none;
+}
+
+.b-r-n{
+    border-right: none;
+}
