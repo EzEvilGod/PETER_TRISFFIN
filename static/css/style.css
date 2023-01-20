@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-align: center;
 }
 
 body{
@@ -36,11 +37,13 @@ body{
     height: 150px;
     border-right: 2px solid #f2c14e;
     border-bottom: 2px solid #f2c14e;
+    border-radius: 5px;
 }
 
 .box:hover{
     background-color: rgba(92, 178, 57, 0.3);
 }
+
 
 .b-b-n
 {
@@ -54,6 +57,9 @@ body{
 /*css h1 e h2 per titolo e stuto del giocatore*/
 .bg-c-f{
     color: #f2c14e;
+}
+.f-s-120px{
+    font-size: 120px;
 }
 .f-s-48px{
     font-size: 48px;
