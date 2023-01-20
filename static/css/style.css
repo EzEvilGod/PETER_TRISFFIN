@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&display=swap');
 
 *{
     margin: 0;
@@ -27,6 +28,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     margin: 40px auto;
+    cursor: pointer;
 }
 
 .box{
@@ -47,4 +49,54 @@ body{
 
 .b-r-n{
     border-right: none;
+}
+
+/*css h1 e h2 per titolo e stuto del giocatore*/
+.bg-c-f{
+    color: #f2c14e;
+}
+.f-s-48px{
+    font-size: 48px;
+}
+
+.f-f-Permanent-Marker{
+    font-family: 'Permanent Marker', cursive;
+}
+
+.l-s-3px{
+    letter-spacing: 3px;
+}
+
+.f-s-24px{
+    font-size: 32px;
+}
+
+.m-b-20px{
+    margin-bottom: 20px;
+}
+
+/*css settings button*/
+button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #f2c14e;
+    cursor: pointer;
+    border-color: #2d414b;
+}
+
+a{
+    text-decoration: none;
+    color: #2d414b;
+}
+
+.font-button{
+    font-size: 18px;
+}
+
+button:hover{
+    box-shadow: 1px 1px 15px 5px #f2c14e;   
+}
+
+.f-f-Comics{
+    font-family: 'Comic Neue', cursive;
 }
