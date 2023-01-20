@@ -9,8 +9,12 @@
 }
 
 body{
-    color: #f2c14e;
-    background-color: #2d414b;
+    color: #000;
+    background-image: url("../img/stewie.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    
 }
 /*setting class secondarie aggiuntive*/
 .flex{
@@ -35,8 +39,8 @@ body{
 .box{
     width: 150px;
     height: 150px;
-    border-right: 2px solid #f2c14e;
-    border-bottom: 2px solid #f2c14e;
+    border-right: 2px solid #000;
+    border-bottom: 2px solid #000;
     border-radius: 5px;
 }
 
