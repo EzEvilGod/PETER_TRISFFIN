@@ -7,7 +7,6 @@ let boxes = Array.from(document.getElementsByClassName('box'))
 //ho usato la variabile const per definire il valore sia della X che del O
 const O_TxT = "O"
 const X_TxT = "X"
-const D_TxT = "Draw"
 
 let currentPlayer = X_TxT //il player iniziale inizia con la X
 let spaces = Array(9).fill(null) //con la variabile spaces sto svuotando le celle Array che el nostro caso sono: 9
@@ -34,6 +33,7 @@ function startGame(){
 function boxClicked(e){
     ///console.log(e.target)
     let id = e.target.id
+
     if(!spaces[id])
     {
         spaces[id] = currentPlayer
@@ -52,18 +52,33 @@ function boxClicked(e){
         {
             statusPlayerTxt.textContent = `Ha vinto: ${O_TxT}`
         }
-        else if(Draw){
-            statusPlayerTxt.textContent = `${D_TxT}`
-        }
     }
+    if(PlayerDraw() == false)
+    {
+        statusPlayerTxt.textContent = `Pareggio`
+    }
+    
 }
 
 function PlayerWon()
 {
+    
     for(let i = 0; i<Combo.length; i++)
     {
         let [a,b,c] = Combo[i]
         if(spaces[a] && (spaces[a] == spaces[b] && spaces[a] == spaces[c])){
+            return[a,b,c]
+        }
+    }
+    return false
+}
+
+function PlayerDraw()
+{
+    for(let i = 0; i<Combo.length; i++)
+    {
+        let [a,b,c] = Combo[i]
+        if(!spaces[a] || !spaces[b] || !spaces[c]){
             return[a,b,c]
         }
     }
