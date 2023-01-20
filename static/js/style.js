@@ -10,6 +10,19 @@ const X_TxT = "X"
 let currentPlayer = X_TxT //il player iniziale inizia con la X
 let spaces = Array(9).fill(null) //con la variabile spaces sto svuotando le celle Array che el nostro caso sono: 9
 
+let Combo = [
+    //orrizontale
+    [0,1,2],
+    [3,4,5],
+    [6,7,8],
+    //verticale
+    [0,3,6],
+    [1,4,7],
+    [2,5,8],
+    //oblique
+    [0,4,8],
+    [2,4,6]
+]
 //console.log(spaces)
 
 function startGame(){ 
@@ -25,8 +38,10 @@ function boxClicked(e){
         e.target.innerText = currentPlayer
 
         currentPlayer = currentPlayer === X_TxT ? O_TxT : X_TxT//switch player
+        statusPlayerTxt.textContent = `E' il turno di ${currentPlayer}`
     }
 }
+
 
 restartBtn.addEventListener('click', restart)
 
@@ -38,6 +53,7 @@ function restart()
     })
 
     currentPlayer = X_TxT
+    statusPlayerTxt.textContent = ""
 }
 
 startGame()
