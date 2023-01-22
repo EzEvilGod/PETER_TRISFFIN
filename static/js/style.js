@@ -9,7 +9,7 @@ const O_TxT = "O"
 const X_TxT = "X"
 
 let currentPlayer = X_TxT //il player iniziale inizia con la X
-let spaces = Array(9).fill(null) //con la variabile spaces sto svuotando le celle Array che el nostro caso sono: 9
+let spaces = Array(9).fill(null) //con la variabile spaces sto svuotando le celle Array che nel nostro caso sono: 9
 
 let Combo = [
     //orrizontale
