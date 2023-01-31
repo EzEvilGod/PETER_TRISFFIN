@@ -85,6 +85,9 @@ body{
     margin-bottom: 20px;
 }
 
+.m-t-15px{
+    margin-top: 15px;
+}
 /*css settings button*/
 button{
     padding: 10px 20px;
@@ -109,10 +112,4 @@ button:hover{
 
 .f-f-Comics{
     font-family: 'Comic Neue', cursive;
-}
-
-#changeBtn{
-    position: absolute;
-    bottom: 0;
-    right: 0;
 }
