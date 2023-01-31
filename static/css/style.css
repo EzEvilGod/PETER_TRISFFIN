@@ -9,8 +9,8 @@
 }
 
 body{
-    color: #000;
-    background-image: url("../img/stewie.jpg");
+    color: #fff;
+    background-image: url("../img/harry.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -39,8 +39,8 @@ body{
 .box{
     width: 150px;
     height: 150px;
-    border-right: 3px solid #000;
-    border-bottom: 3px solid #000;
+    border-right: 3px solid #fff;
+    border-bottom: 3px solid #fff;
     border-radius: 5px;
 }
 
@@ -85,16 +85,25 @@ body{
     margin-bottom: 20px;
 }
 
-.m-t-15px{
+.SBT-m-b-300px{
+    margin-bottom: 100px;
+}
+
+.T-m-t-15px{
     margin-top: 15px;
+}
+
+.B-m-t-70px{
+    margin-top: 70px;
 }
 /*css settings button*/
 button{
     padding: 10px 20px;
     border-radius: 10px;
-    background-color: #f2c14e;
+    background-color: #fff;
     cursor: pointer;
     border-color: #2d414b;
+    color: #000;
 }
 
 a{
@@ -107,9 +116,237 @@ a{
 }
 
 button:hover{
-    box-shadow: 1px 1px 15px 5px #f2c14e;   
+    box-shadow: 1px 1px 15px 5px #2c7bab;   
 }
 
 .f-f-Comics{
     font-family: 'Comic Neue', cursive;
+}
+
+@media screen and (min-width: 390px) and (max-width: 414px){
+    body{
+        background-image: url("../img/potter.jpg");
+        background-size: cover;
+        height: 100vh;
+    }
+
+    .flex{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .f-d-c{
+        flex-direction: column;
+    }
+
+    #gameBoard{
+        width: 240px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 40px auto;
+        cursor: pointer;
+    }
+    
+
+    .box{
+        width: 80px;
+        height: 80px;
+        border-right: 3px solid #fff;
+        border-bottom: 3px solid #fff;
+        border-radius: 5px;
+    }
+
+    .b-b-n
+    {
+        border-bottom: none;
+    }
+
+    .b-r-n{
+        border-right: none;
+    }
+
+    .bg-c-f{
+        color: #f2c14e;
+    }
+    .f-s-120px{
+        font-size: 60px;
+    }
+    .f-s-48px{
+        font-size: 20px;
+    }
+    
+    .f-f-Permanent-Marker{
+        font-family: 'Permanent Marker', cursive;
+    }
+    
+    .l-s-3px{
+        letter-spacing: 3px;
+    }
+    
+    .f-s-24px{
+        font-size: 30px;
+    }
+    .SBT-m-b-300px{
+        margin-bottom: 400px;
+    }
+    .T-m-t-15px{
+        margin-top: 15px;
+    }
+    
+    .B-m-t-70px{
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 389px) {
+    body{
+        background-image: url("../img/potter.jpg");
+        background-size: cover;
+        height: 100vh;
+    }
+
+    .flex{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .f-d-c{
+        flex-direction: column;
+    }
+
+    #gameBoard{
+        width: 240px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 40px auto;
+        cursor: pointer;
+    }
+    
+
+    .box{
+        width: 80px;
+        height: 80px;
+        border-right: 3px solid #fff;
+        border-bottom: 3px solid #fff;
+        border-radius: 5px;
+    }
+
+    .b-b-n
+    {
+        border-bottom: none;
+    }
+
+    .b-r-n{
+        border-right: none;
+    }
+
+    .bg-c-f{
+        color: #f2c14e;
+    }
+    .f-s-120px{
+        font-size: 60px;
+    }
+    .f-s-48px{
+        font-size: 20px;
+    }
+    
+    .f-f-Permanent-Marker{
+        font-family: 'Permanent Marker', cursive;
+    }
+    
+    .l-s-3px{
+        letter-spacing: 3px;
+    }
+    
+    .f-s-24px{
+        font-size: 30px;
+    }
+    .SBT-m-b-300px{
+        margin-bottom: 150px;
+    }
+    .T-m-t-15px{
+        margin-top: 15px;
+    }
+    
+    .B-m-t-70px{
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 374px) {
+    body{
+        background-image: url("../img/potter.jpg");
+        background-size: cover;
+        height: 100vh;
+    }
+
+    .flex{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .f-d-c{
+        flex-direction: column;
+    }
+
+    #gameBoard{
+        width: 240px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 40px auto;
+        cursor: pointer;
+    }
+    
+
+    .box{
+        width: 80px;
+        height: 80px;
+        border-right: 3px solid #fff;
+        border-bottom: 3px solid #fff;
+        border-radius: 5px;
+    }
+
+    .b-b-n
+    {
+        border-bottom: none;
+    }
+
+    .b-r-n{
+        border-right: none;
+    }
+
+    .bg-c-f{
+        color: #f2c14e;
+    }
+    .f-s-120px{
+        font-size: 60px;
+    }
+    .f-s-48px{
+        font-size: 20px;
+    }
+    
+    .f-f-Permanent-Marker{
+        font-family: 'Permanent Marker', cursive;
+    }
+    
+    .l-s-3px{
+        letter-spacing: 3px;
+    }
+    
+    .f-s-24px{
+        font-size: 30px;
+    }
+    .SBT-m-b-300px{
+        margin-bottom: 260px;
+    }
+    .T-m-t-15px{
+        margin-top: 15px;
+    }
+    
+    .B-m-t-70px{
+        margin-top: 20px;
+    }
 }
